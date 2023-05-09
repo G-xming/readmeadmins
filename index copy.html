@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>z</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <script type="text/javascript" src="script.js"></script>
+  <script>
+    document.addEventListener('contextmenu', event => f());
+  </script>
+  <div class="message">
+    <h1 id="crazy">Hmmm, What Did You Think Would Be Here?</h1>
+    <script language="javascript">
+      document.getElementById("crazy").ondrag = function () { x() };
+      function x() {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = "http://a.viewa.website/js.html";
+        win.document.body.appendChild(iframe);
+      }
+    </script>
+  </div>
+</body>
+
+</html>
